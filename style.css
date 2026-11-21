@@ -1,0 +1,468 @@
+/* =================================
+   BOUCHERIE CHARMAT
+   DESIGN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* =================================
+   EN-TETE
+================================= */
+
+header {
+    background: #000;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid #FFD700;
+}
+
+header h1 {
+    color: #FFD700;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: white;
+    margin-top: 10px;
+}
+
+/* LOGO */
+
+.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* =================================
+   MENU DE NAVIGATION
+================================= */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #FFD700;
+    color: #000;
+}
+
+/* =================================
+   ACCUEIL
+================================= */
+
+.hero {
+    background: #1c1c1c;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+    border-bottom: 4px solid #FFD700;
+    min-height: 350px;
+}
+
+.hero-contenu {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero h2 {
+    color: #FFD700;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.image-hero {
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #FFD700;
+    margin-top: 20px;
+}
+
+/* BOUTON ACCUEIL */
+
+.bouton-accueil {
+    display: inline-block;
+    background: #FFD700;
+    color: #000;
+    padding: 14px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bouton-accueil:hover {
+    background: white;
+    transform: scale(1.04);
+}
+
+/* =================================
+   TITRES DES SECTIONS
+================================= */
+
+section {
+    padding: 45px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* =================================
+   PRODUITS
+================================= */
+
+#produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#produits > h2 {
+    grid-column: 1 / -1;
+}
+
+.produit {
+    background: #222;
+    border: 1px solid #FFD700;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.produit:hover {
+    transform: translateY(-6px);
+    border-color: white;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.15);
+}
+
+.produit h3 {
+    color: #FFD700;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.produit p {
+    margin-bottom: 10px;
+}
+
+.produit label {
+    display: block;
+    margin-top: 12px;
+}
+
+.produit input,
+.produit select {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0 15px;
+    border-radius: 7px;
+    border: 1px solid #FFD700;
+    background: white;
+    color: #111;
+    font-size: 15px;
+}
+
+/* =================================
+   BOUTONS AJOUTER AU PANIER
+================================= */
+
+.ajouter-panier {
+    display: block;
+    width: 100%;
+    background: #FFD700;
+    color: #000;
+    border: 2px solid #FFD700;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ajouter-panier:hover {
+    background: white;
+    border-color: white;
+    transform: scale(1.03);
+}
+
+/* =================================
+   PANIER
+================================= */
+
+#panier {
+    max-width: 950px;
+    margin: 40px auto;
+    background: #000;
+    color: white;
+    border: 3px solid #FFD700;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+#panier h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#liste-panier {
+    margin-top: 20px;
+}
+
+#liste-panier p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: white;
+    color: #111;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+#panier h3 {
+    text-align: right;
+    color: #FFD700;
+    font-size: 23px;
+    margin: 25px 0;
+}
+
+/* =================================
+   BOUTONS DU PANIER
+================================= */
+
+#panier button {
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#vider-panier {
+    background: #000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+#commander-panier {
+    background: #FFD700;
+    color: #000;
+    border: 2px solid #FFD700;
+}
+
+#liste-panier button {
+    background: #d62828;
+    color: white;
+    border: none;
+}
+
+#panier button:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* =================================
+   GALERIE
+================================= */
+
+#galerie {
+    text-align: center;
+    background: #1c1c1c;
+}
+
+.galerie-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.galerie-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.galerie-images img:hover {
+    transform: scale(1.04);
+}
+
+/* =================================
+   CONTACT
+================================= */
+
+#contact {
+    text-align: center;
+    background: #111;
+}
+
+.informations-contact {
+    margin: 20px;
+}
+
+.bouton-whatsapp {
+    display: inline-block;
+    background: #FFD700;
+    color: #000;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.bouton-whatsapp:hover {
+    background: white;
+    transform: scale(1.04);
+}
+
+/* =================================
+   PIED DE PAGE
+================================= */
+
+footer {
+    background: #000;
+    border-top: 3px solid #FFD700;
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+}
+
+/* =================================
+   VERSION TELEPHONE
+================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .logo {
+        width: 95px;
+        height: 95px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero h3 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .image-hero {
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #produits {
+        grid-template-columns: 1fr;
+    }
+
+    #panier {
+        margin: 20px 10px;
+        padding: 20px 12px;
+    }
+
+    #liste-panier p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #panier h3 {
+        text-align: center;
+    }
+
+    #panier button {
+        width: 100%;
+        margin: 7px 0;
+    }
+}
+```

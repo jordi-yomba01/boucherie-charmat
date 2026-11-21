@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+ content=width=device=width, initial-scal=1.0
+
+    <title>Boucherie charmat</title>
+
+   <style>
+@import url("style.css");
+</style>
+
+</head>
+
+<body>
+    <img src="banniere/viande.png" width="400" alt="Test de la bannière">
+
+	<header>
+
+    <img src="images/logo.png" alt="Logo Boucherie Charmat" class="logo">
+
+    <h1><strong><i>Boucherie Charmat</i></strong></h1>
+<nav class="menu">
+    <a href="#acceuil">Accueil</a>
+    <a href="#produits">Nos produits</a>
+    <a href="#panier">Mon panier</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+</nav>
+	<main>
+			<section id="acceuil" class="hero">
+                <img src="file:///C:/Users/User/Desktop/BOUCHERIE/banniere/viande.png" width="400" alt="Test image">
+    <div class="hero-contenu">
+        <h2>BIENVENUE CHEZ BOUCHERIE CHARMAT</h2>
+    <p>
+        Découvrez notre sélection des viandes et des poissons
+        frais, soigneusement choisis pour vous.
+    </p>
+
+    <p>
+        Qualité, fraîcheur et satisfaction sont nos priorités.
+    </p>
+
+    <a href="#produits" class="bouton-accueil">
+        Découvrir nos produits
+    </a>
+</div>
+</section>
+		</nav>
+		<main>
+			<p>Découvrez nos viandes fraiches et nos produits de qualité.</p>
+
+<section id="produits">
+
+    <h2>Nos produits et nos prix</h2>
+
+    <article class="produit" data-prix="17000">
+        <h3>Viande de porc</h3>
+        <p>17 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+       <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="22000">
+        <h3>Viande de bœuf</h3>
+        <p>22 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+        <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="20000">
+        <h3>Viande de chèvre</h3>
+        <p>20 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+        <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit">
+        <h3>Poulet</h3>
+        <p>9 000 FC / 10 piece</p>
+        <p>10 000 FC / 9 piece</p>
+        <p>12 000 FC / 9 piece</p>
+
+
+        <label for="format-poulet">choisissez votre format :</label>
+
+        <select id="format-poulet" class="quantite">
+            <option value="9000">10 pieces - 9000 FC</option>
+            <option value="10000">9 pieces - 10000 FC</option>
+            <option value="12000">8 pieces - 12000 FC</option>
+        </select>
+
+        <label>Quantité (kg) :</label>
+        <input type="number" min="1" step="0.5" value="1">
+
+     <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit">
+        <h3>Cuisses</h3>
+        <p>8 000 FC AR / kg</p>
+        <p>10 000 FC AB /kg</p>
+
+        <label for="format-cuisse">choisissez votre format :</label>
+
+        <select id="format-cuisse " class="quantite">
+            <option value="8000">AR - 8000 FC</option>
+            <option value="10000">AB - 10000 FC</option>
+        </select>
+
+        <label>Quantité (kg) :</label>
+        <input type="number" min="0.5" step="0.5" value="1">
+
+     <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit">
+        <h3>Poisson</h3>
+        <p>8 000 FC / kg 18+</p>
+        <p>9 000 FC / kg 20+</p>
+
+        <label for="format-poisson">chosisserz votre format :</label>
+
+        <select id="format-poisson" class="format-produit">
+            <option value="9000">20+ - 9000 FC</option>
+            <option value="8000">18+ - 8000 FC</option>
+        </select>
+
+         <label>Quantité (kg) :</label>
+        <input type="number" class="quantite" min="0.5" step="0.5" value="1">
+
+         <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="10000">
+        <h3>Cotis</h3>
+        <p>10 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+        <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="11000">
+        <h3>Dindon</h3>
+        <p>11 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+
+         <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="18000">
+        <h3>Capitaine</h3>
+        <p>18 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+         <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="12000">
+        <h3>Rougis</h3>
+        <p>12 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+        <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="10000">
+        <h3>Ngolo</h3>
+        <p>10 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+        <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+    <article class="produit" data-prix="8000">
+        <h3>Gésier</h3>
+        <p>8 000 FC / kg</p>
+
+        <label>Quantité (kg) :</label>
+
+        <input type="number" class="quantite"e" min="0.5" step="0.5" value="1">
+
+         <button type="button" class="ajouter-panier">
+    Ajouter au panier
+</button>
+    </article>
+
+</section>
+
+<!-- PANIER -->
+<section id="panier">
+
+    <h2>Mon panier 🛒</h2>
+
+    <div id="liste-panier">
+        <p>Votre panier est vide.</p>
+    </div>
+
+    <h3>
+        Total : <span id="total-panier">0 FC</span>
+    </h3>
+
+    <button id="vider-panier">
+        Vider le panier
+    </button>
+
+    <button id="commander-panier">
+        Commander sur WhatsApp
+    </button>
+
+</section>
+
+<section id="galerie">
+
+    <h2>Galerie de notre boucherie</h2>
+
+    <p>Découvrez quelques-uns de nos produits.</p>
+
+    <div class="galerie-images">
+
+        <img src="images/boeuf.jpg" alt="Viande de bœuf">
+
+        <img src="images/porc.jpg" alt="Viande de porc">
+
+        <img src="images/poulet.jpg" alt="Poulet">
+
+        <img src="images/poisson.jpg" alt="Poisson">
+
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contactez Boucherie Charmat</h2>
+
+    <p>Nous sommes à votre disposition pour vos commandes.</p>
+    <div class="informations-contact">
+        <p><strong>Télephone :</strong> +243995065178</p>
+
+        <p><strong>Adresse :</strong> Marcher clinique Kikanda</p>
+    </div>
+
+    <a href="https://wa.me/+243897457097"
+       class="bouton-whatsapp"
+       target=_blank"
+       rel="noopener">
+        commander sur whatsapp
+    </a>
+
+</section>
+
+		</main>
+
+		<footer>
+			<p> 2026 Notre boucherie - tous droits réservés.</p>
+		</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
